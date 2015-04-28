@@ -1,0 +1,1389 @@
+I, [2015-04-25T18:28:25.419857 #9676]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:28:26.185548 #9676]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:28:26.303033 #9676]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:28:32.278596 #9676]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:28:32.697113 #9676]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430004512667_75758
+I, [2015-04-25T18:28:32.907625 #9676]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:28:32.940395 #9676]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:28:32.977635 #9676]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:28:32.977824 #9676]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:28:33.014464 #9676]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:28:33.073059 #9676]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:28:33.181721 #9676]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:28:33.511727 #9676]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:28:33.511829 #9676]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:28:33.511852 #9676]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:28:48.615866 #9676]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:28:49.009536 #9676]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:28:49.009590 #9676]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:28:49.009606 #9676]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:28:49.445602 #9676]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:28:49.445703 #9676]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:28:49.736502 #9676]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:28:49.918824 #9676]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:28:50.343789 #9676]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:28:50.344010 #9676]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:28:50.375491 #9676]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:28:58.450599 #9676]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:28:59.438461 #9676]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:28:59.439501 #9676]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m34.02s).
+I, [2015-04-25T18:28:59.439573 #9676]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:28:59.440022 #9676]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:28:59.440074 #9676]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:28:59.440264 #9676]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:29:01.221821 #9676]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:29:01.222708 #9676]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:29:01.391536 #9676]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:29:01.391601 #9676]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:29:01.391619 #9676]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:29:01.391633 #9676]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:29:06.602564 #9676]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:29:06.602767 #9676]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:29:06.602967 #9676]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/metadata.txt
+I, [2015-04-25T18:29:06.603279 #9676]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:29:11.807106 #9676]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:29:11.807547 #9676]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:29:11.807854 #9676]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:29:11.809578 #9676]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:29:11.813428 #9676]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:29:11.813612 #9676]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:29:11.813766 #9676]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:29:52.428399 #9676]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:29:52.606533 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:29:52.606807 #9676]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:29:52.606922 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:29:52.607110 #9676]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:29:52.607249 #9676]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:29:52.607379 #9676]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:29:52.607538 #9676]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:29:52.607702 #9676]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:29:52.607806 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:29:52.607952 #9676]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:29:52.608034 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:29:52.608141 #9676]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:29:52.608244 #9676]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:29:52.637345 #9676]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:29:52.705452 #9676]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:29:52.706393 #9676]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:29:52.708849 #9676]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:29:57.184737 #9676]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:29:57.254504 #9676]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:29:57.314607 #9676]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:29:59.132059 #9676]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:30:04.934172 #9676]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:30:04.940088 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.940369 #9676]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T18:30:04.940622 #9676]  INFO -- default-ubuntu-1404: Recipe Compile Error in /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T18:30:04.940854 #9676]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T18:30:04.940971 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.941129 #9676]  INFO -- default-ubuntu-1404: NoMethodError
+I, [2015-04-25T18:30:04.941274 #9676]  INFO -- default-ubuntu-1404: -------------
+I, [2015-04-25T18:30:04.941425 #9676]  INFO -- default-ubuntu-1404: undefined method `ntp' for Chef::Resource::Template
+I, [2015-04-25T18:30:04.941534 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.941706 #9676]  INFO -- default-ubuntu-1404: Cookbook Trace:
+I, [2015-04-25T18:30:04.941964 #9676]  INFO -- default-ubuntu-1404: ---------------
+I, [2015-04-25T18:30:04.942155 #9676]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:12:in `block in from_file'
+I, [2015-04-25T18:30:04.942376 #9676]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T18:30:04.942493 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.942694 #9676]  INFO -- default-ubuntu-1404: Relevant File Content:
+I, [2015-04-25T18:30:04.942874 #9676]  INFO -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:30:04.943037 #9676]  INFO -- default-ubuntu-1404: /tmp/kitchen/cookbooks/example2/recipes/default.rb:
+I, [2015-04-25T18:30:04.943130 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.943298 #9676]  INFO -- default-ubuntu-1404:   5:  end
+I, [2015-04-25T18:30:04.943463 #9676]  INFO -- default-ubuntu-1404:   6:  
+I, [2015-04-25T18:30:04.943612 #9676]  INFO -- default-ubuntu-1404:   7:  file "/etc/ntp.conf" do
+I, [2015-04-25T18:30:04.943887 #9676]  INFO -- default-ubuntu-1404:   8:  	action :delete
+I, [2015-04-25T18:30:04.944033 #9676]  INFO -- default-ubuntu-1404:   9:  end
+I, [2015-04-25T18:30:04.944191 #9676]  INFO -- default-ubuntu-1404:  10:  
+I, [2015-04-25T18:30:04.944381 #9676]  INFO -- default-ubuntu-1404:  11:  template "/etc/ntp.conf" do
+I, [2015-04-25T18:30:04.944658 #9676]  INFO -- default-ubuntu-1404:  12>> 	source ntp.conf.erb
+I, [2015-04-25T18:30:04.944819 #9676]  INFO -- default-ubuntu-1404:  13:  end
+I, [2015-04-25T18:30:04.944898 #9676]  INFO -- default-ubuntu-1404:  14:  
+I, [2015-04-25T18:30:04.944919 #9676]  INFO -- default-ubuntu-1404:  15:  service "ntp" do
+I, [2015-04-25T18:30:04.944933 #9676]  INFO -- default-ubuntu-1404:  16:  	action [:start, :enable]
+I, [2015-04-25T18:30:04.944949 #9676]  INFO -- default-ubuntu-1404:  17:  end
+I, [2015-04-25T18:30:04.945058 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.945082 #9676]  INFO -- default-ubuntu-1404:  19:  
+I, [2015-04-25T18:30:04.945097 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.945116 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.945231 #9676]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:30:04.945335 #9676]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:30:04.945357 #9676]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T18:30:04.945374 #9676]  INFO -- default-ubuntu-1404: [2015-04-25T23:30:04+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T18:30:04.945540 #9676]  INFO -- default-ubuntu-1404: [2015-04-25T23:30:04+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-04-25T18:30:04.948544 #9676]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 5.817267962 seconds
+I, [2015-04-25T18:30:04.959561 #9676]  INFO -- default-ubuntu-1404: [2015-04-25T23:30:04+00:00] ERROR: undefined method `ntp' for Chef::Resource::Template
+I, [2015-04-25T18:30:04.982338 #9676]  INFO -- default-ubuntu-1404: [2015-04-25T23:30:04+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T18:30:05.004229 #9676] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T18:30:05.004326 #9676] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T18:30:05.004344 #9676] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T18:30:05.004356 #9676] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:30:05.004368 #9676] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T18:30:05.004379 #9676] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T18:30:05.004388 #9676] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:30:05.004400 #9676] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T18:30:05.004410 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T18:30:05.004421 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T18:30:05.004432 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T18:30:05.004440 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T18:30:05.004451 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T18:30:05.004462 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T18:30:05.004472 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T18:30:05.004481 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T18:30:05.004492 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T18:30:05.004503 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T18:30:05.004513 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T18:30:05.004525 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T18:30:05.004533 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T18:30:05.004550 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T18:30:05.004562 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T18:30:05.004573 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T18:30:05.004581 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T18:30:05.004592 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T18:30:05.004603 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T18:30:05.004612 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T18:30:05.004622 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T18:30:05.004633 #9676] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T18:30:05.004644 #9676] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:34:24.997339 #11052]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:34:26.321258 #11052]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:34:27.397513 #11052]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:34:27.692103 #11052]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:34:27.692992 #11052]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.69s).
+I, [2015-04-25T18:34:30.596615 #11400]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:34:31.346652 #11400]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:34:31.462642 #11400]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:34:37.375262 #11400]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:34:37.789899 #11400]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430004877761_88361
+I, [2015-04-25T18:34:38.001407 #11400]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:34:38.035500 #11400]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:34:38.072629 #11400]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:34:38.072838 #11400]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:34:38.110045 #11400]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:34:38.169534 #11400]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:34:38.279741 #11400]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:34:38.613947 #11400]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:34:38.614123 #11400]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:34:38.614237 #11400]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:34:53.688485 #11400]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:34:54.097102 #11400]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:34:54.097156 #11400]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:34:54.097172 #11400]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:34:54.557097 #11400]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:34:54.557194 #11400]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:34:54.849331 #11400]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:34:55.071188 #11400]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:34:55.447889 #11400]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:34:55.448070 #11400]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:34:55.480072 #11400]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:35:03.564911 #11400]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:35:04.558741 #11400]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:35:04.559805 #11400]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.96s).
+I, [2015-04-25T18:35:04.559872 #11400]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:35:04.560364 #11400]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:35:04.560413 #11400]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:35:04.560572 #11400]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:35:04.611837 #11400]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:35:04.612674 #11400]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:35:04.781543 #11400]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:35:04.781611 #11400]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:35:04.781628 #11400]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:35:04.781642 #11400]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:35:09.993046 #11400]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:35:09.993256 #11400]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:35:09.993455 #11400]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/metadata.txt
+I, [2015-04-25T18:35:09.993785 #11400]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:35:15.189525 #11400]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:35:15.189940 #11400]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:35:15.190264 #11400]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:35:15.192015 #11400]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:35:15.196150 #11400]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:35:15.196334 #11400]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:35:15.196481 #11400]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:35:44.473098 #11400]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:35:44.657533 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:44.657747 #11400]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:35:44.657851 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:44.658003 #11400]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:35:44.658136 #11400]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:35:44.658307 #11400]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:35:44.658478 #11400]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:35:44.658646 #11400]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:35:44.658757 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:44.658885 #11400]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:35:44.658961 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:44.659060 #11400]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:35:44.659165 #11400]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:35:44.688372 #11400]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:35:44.755934 #11400]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:35:44.757026 #11400]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:35:44.759762 #11400]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:35:49.200684 #11400]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:35:49.263496 #11400]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:35:49.322637 #11400]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:35:51.135999 #11400]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:35:56.927903 #11400]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:35:56.933890 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.934079 #11400]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T18:35:56.934247 #11400]  INFO -- default-ubuntu-1404: Recipe Compile Error in /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T18:35:56.934540 #11400]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T18:35:56.934658 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.934797 #11400]  INFO -- default-ubuntu-1404: NoMethodError
+I, [2015-04-25T18:35:56.934933 #11400]  INFO -- default-ubuntu-1404: -------------
+I, [2015-04-25T18:35:56.935081 #11400]  INFO -- default-ubuntu-1404: undefined method `ntp' for Chef::Resource::Template
+I, [2015-04-25T18:35:56.935184 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.935351 #11400]  INFO -- default-ubuntu-1404: Cookbook Trace:
+I, [2015-04-25T18:35:56.935526 #11400]  INFO -- default-ubuntu-1404: ---------------
+I, [2015-04-25T18:35:56.935680 #11400]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:12:in `block in from_file'
+I, [2015-04-25T18:35:56.935845 #11400]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T18:35:56.935947 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.936109 #11400]  INFO -- default-ubuntu-1404: Relevant File Content:
+I, [2015-04-25T18:35:56.936294 #11400]  INFO -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:35:56.936457 #11400]  INFO -- default-ubuntu-1404: /tmp/kitchen/cookbooks/example2/recipes/default.rb:
+I, [2015-04-25T18:35:56.936561 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.936722 #11400]  INFO -- default-ubuntu-1404:   5:  end
+I, [2015-04-25T18:35:56.936875 #11400]  INFO -- default-ubuntu-1404:   6:  
+I, [2015-04-25T18:35:56.937034 #11400]  INFO -- default-ubuntu-1404:   7:  file "/etc/ntp.conf" do
+I, [2015-04-25T18:35:56.937313 #11400]  INFO -- default-ubuntu-1404:   8:  	action :delete
+I, [2015-04-25T18:35:56.937477 #11400]  INFO -- default-ubuntu-1404:   9:  end
+I, [2015-04-25T18:35:56.937634 #11400]  INFO -- default-ubuntu-1404:  10:  
+I, [2015-04-25T18:35:56.937796 #11400]  INFO -- default-ubuntu-1404:  11:  template "/etc/ntp.conf" do
+I, [2015-04-25T18:35:56.938069 #11400]  INFO -- default-ubuntu-1404:  12>> 	source ntp.conf.erb
+I, [2015-04-25T18:35:56.938235 #11400]  INFO -- default-ubuntu-1404:  13:  end
+I, [2015-04-25T18:35:56.938371 #11400]  INFO -- default-ubuntu-1404:  14:  
+I, [2015-04-25T18:35:56.938466 #11400]  INFO -- default-ubuntu-1404:  15:  service "ntp" do
+I, [2015-04-25T18:35:56.938630 #11400]  INFO -- default-ubuntu-1404:  16:  	action [:start, :enable]
+I, [2015-04-25T18:35:56.938722 #11400]  INFO -- default-ubuntu-1404:  17:  end
+I, [2015-04-25T18:35:56.938743 #11400]  INFO -- default-ubuntu-1404:  18:  
+I, [2015-04-25T18:35:56.938758 #11400]  INFO -- default-ubuntu-1404:  19:  
+I, [2015-04-25T18:35:56.949293 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.949352 #11400]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:35:56.949531 #11400]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:35:56.949554 #11400]  INFO -- default-ubuntu-1404: [2015-04-25T23:35:56+00:00] ERROR: Running exception handlers
+I, [2015-04-25T18:35:56.949568 #11400]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T18:35:56.949580 #11400]  INFO -- default-ubuntu-1404: [2015-04-25T23:35:56+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T18:35:56.949841 #11400]  INFO -- default-ubuntu-1404: [2015-04-25T23:35:56+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-04-25T18:35:56.949956 #11400]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 5.805178207 seconds
+I, [2015-04-25T18:35:56.957979 #11400]  INFO -- default-ubuntu-1404: [2015-04-25T23:35:56+00:00] ERROR: undefined method `ntp' for Chef::Resource::Template
+I, [2015-04-25T18:35:56.979740 #11400]  INFO -- default-ubuntu-1404: [2015-04-25T23:35:56+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T18:35:57.001719 #11400] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T18:35:57.001803 #11400] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T18:35:57.001818 #11400] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T18:35:57.001828 #11400] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:35:57.001837 #11400] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T18:35:57.001846 #11400] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T18:35:57.001860 #11400] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:35:57.001870 #11400] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T18:35:57.001878 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T18:35:57.001886 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T18:35:57.001894 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T18:35:57.001902 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T18:35:57.001910 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T18:35:57.001926 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T18:35:57.001935 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T18:35:57.001943 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T18:35:57.001951 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T18:35:57.001959 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T18:35:57.001967 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T18:35:57.001975 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T18:35:57.001983 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T18:35:57.001991 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T18:35:57.001999 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T18:35:57.002007 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T18:35:57.002015 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T18:35:57.002023 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T18:35:57.002031 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T18:35:57.002039 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T18:35:57.002046 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T18:35:57.002054 #11400] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T18:35:57.002062 #11400] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:39:20.679550 #12737]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:39:22.014450 #12737]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:39:23.116029 #12737]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:39:23.418357 #12737]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:39:23.419261 #12737]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.74s).
+I, [2015-04-25T18:39:25.269087 #13085]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:39:26.016330 #13085]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:39:26.131929 #13085]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:39:31.304902 #13085]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:39:31.725446 #13085]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430005171696_31526
+I, [2015-04-25T18:39:31.941570 #13085]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:39:31.973727 #13085]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:39:32.010861 #13085]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:39:32.011096 #13085]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:39:32.049055 #13085]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:39:32.108794 #13085]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:39:32.217491 #13085]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:39:32.542427 #13085]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:39:32.542557 #13085]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:39:32.542606 #13085]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:39:47.648383 #13085]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:39:48.045479 #13085]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:39:48.045539 #13085]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:39:48.045558 #13085]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:39:48.488369 #13085]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:39:48.488424 #13085]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:39:48.778486 #13085]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:39:49.000312 #13085]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:39:49.379171 #13085]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:39:49.379396 #13085]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:39:49.409770 #13085]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:39:57.468753 #13085]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:39:58.529453 #13085]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:39:58.530553 #13085]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.26s).
+I, [2015-04-25T18:39:58.530648 #13085]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:39:58.531135 #13085]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:39:58.531199 #13085]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:39:58.531403 #13085]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:39:58.585220 #13085]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:39:58.586082 #13085]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:39:58.758507 #13085]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:39:58.758580 #13085]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:39:58.758601 #13085]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:39:58.758618 #13085]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:40:04.066700 #13085]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:40:04.066885 #13085]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:40:04.067018 #13085]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/metadata.txt
+I, [2015-04-25T18:40:04.067180 #13085]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:40:09.268674 #13085]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:40:09.268918 #13085]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:40:09.269245 #13085]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:40:09.271029 #13085]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:40:09.274862 #13085]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:40:09.275159 #13085]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:40:09.275350 #13085]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:41:09.334026 #13085]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:41:09.515290 #13085]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:41:09.515478 #13085]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:41:09.515576 #13085]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:41:09.515714 #13085]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:41:09.515875 #13085]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:41:09.516017 #13085]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:41:09.516154 #13085]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:41:09.516374 #13085]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:41:09.516490 #13085]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:41:09.516656 #13085]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:41:09.516753 #13085]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:41:09.516896 #13085]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:41:09.517020 #13085]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:41:09.547291 #13085]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:41:09.615905 #13085]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:41:09.616975 #13085]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:41:09.619267 #13085]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:41:14.241139 #13085]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:41:14.311094 #13085]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:41:14.370550 #13085]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:41:16.259533 #13085]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:41:22.095599 #13085]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:41:22.101695 #13085]  INFO -- default-ubuntu-1404: Converging 14 resources
+I, [2015-04-25T18:41:22.102205 #13085]  INFO -- default-ubuntu-1404: Recipe: apt::default
+I, [2015-04-25T18:41:22.102676 #13085]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:41:22.103971 #13085]  INFO -- default-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2015-04-25T18:41:22.109228 #13085]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2015-04-25T18:41:22.110222 #13085]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2015-04-25T18:41:22.110566 #13085]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2015-04-25T18:41:22.110938 #13085]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/15update-stamp	2015-04-25 23:41:22.100320677 +0000
+I, [2015-04-25T18:41:22.111327 #13085]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.15update-stamp20150425-1443-ygnjvl	2015-04-25 23:41:22.100320677 +0000
+I, [2015-04-25T18:41:22.111528 #13085]  INFO -- default-ubuntu-1404:     @@ -1 +1,2 @@
+I, [2015-04-25T18:41:22.112043 #13085]  INFO -- default-ubuntu-1404:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2015-04-25T18:41:42.843922 #13085]  INFO -- default-ubuntu-1404:   * execute[apt-get-update] action run
+I, [2015-04-25T18:41:42.844180 #13085]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2015-04-25T18:41:42.847608 #13085]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action touch
+I, [2015-04-25T18:41:42.848017 #13085]  INFO -- default-ubuntu-1404:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2015-04-25T18:41:42.848624 #13085]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:41:42.849226 #13085]  INFO -- default-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:41:42.849824 #13085]  INFO -- default-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:41:42.861398 #13085]  INFO -- default-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to only_if)
+I, [2015-04-25T18:41:42.861637 #13085]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local] action create
+I, [2015-04-25T18:41:42.861954 #13085]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local
+I, [2015-04-25T18:41:42.862119 #13085]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:41:42.862304 #13085]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:41:42.862487 #13085]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:41:42.862669 #13085]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create
+I, [2015-04-25T18:41:42.862892 #13085]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local/preseeding
+I, [2015-04-25T18:41:42.863077 #13085]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:41:42.863272 #13085]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:41:42.863438 #13085]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:41:42.863538 #13085]  INFO -- default-ubuntu-1404: Recipe: example2::default
+I, [2015-04-25T18:41:51.169269 #13085]  INFO -- default-ubuntu-1404:   * apt_package[ntp] action install
+I, [2015-04-25T18:41:51.169497 #13085]  INFO -- default-ubuntu-1404:     - install version 1:4.2.6.p5+dfsg-3ubuntu2.14.04.3 of package ntp
+I, [2015-04-25T18:41:51.172254 #13085]  INFO -- default-ubuntu-1404:   * file[/etc/ntp.conf] action delete
+I, [2015-04-25T18:41:51.172473 #13085]  INFO -- default-ubuntu-1404:     - delete file /etc/ntp.conf
+I, [2015-04-25T18:41:51.176924 #13085]  INFO -- default-ubuntu-1404:   * template[/etc/ntp.conf] action create
+I, [2015-04-25T18:41:51.178528 #13085]  INFO -- default-ubuntu-1404:     - create new file /etc/ntp.conf
+I, [2015-04-25T18:41:51.178967 #13085]  INFO -- default-ubuntu-1404:     - update content in file /etc/ntp.conf from none to 068322
+I, [2015-04-25T18:41:51.179446 #13085]  INFO -- default-ubuntu-1404:     --- /etc/ntp.conf	2015-04-25 23:41:51.168321277 +0000
+I, [2015-04-25T18:41:51.179876 #13085]  INFO -- default-ubuntu-1404:     +++ /tmp/chef-rendered-template20150425-1443-3q4qc9	2015-04-25 23:41:51.168321277 +0000
+I, [2015-04-25T18:41:51.180251 #13085]  INFO -- default-ubuntu-1404:     @@ -1 +1,4 @@
+I, [2015-04-25T18:41:51.180656 #13085]  INFO -- default-ubuntu-1404:     +for hostname in ntp_servers
+I, [2015-04-25T18:41:51.181143 #13085]  INFO -- default-ubuntu-1404:     +	puts "server ${hostname}"
+I, [2015-04-25T18:41:51.181637 #13085]  INFO -- default-ubuntu-1404:     +end
+I, [2015-04-25T18:41:51.220374 #13085]  INFO -- default-ubuntu-1404:   * service[ntp] action start (up to date)
+I, [2015-04-25T18:41:51.242435 #13085]  INFO -- default-ubuntu-1404:   * service[ntp] action enable (up to date)
+I, [2015-04-25T18:41:51.242632 #13085]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:41:51.242817 #13085]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:41:51.243019 #13085]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T18:41:51.243344 #13085]  INFO -- default-ubuntu-1404: Chef Client finished, 8/11 resources updated in 34.987655949 seconds
+I, [2015-04-25T18:41:51.312951 #13085]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m52.78s).
+I, [2015-04-25T18:45:15.008986 #14451]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:45:16.368148 #14451]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:45:17.481424 #14451]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:45:17.795186 #14451]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:45:17.796091 #14451]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.79s).
+I, [2015-04-25T18:46:51.671695 #14826]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:46:52.421441 #14826]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:46:52.542678 #14826]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:46:58.162787 #14826]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:46:58.581026 #14826]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430005618551_41263
+I, [2015-04-25T18:46:58.793440 #14826]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:46:58.827846 #14826]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:46:58.864788 #14826]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:46:58.864889 #14826]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:46:58.902402 #14826]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:46:58.941151 #14826]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:46:59.050940 #14826]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:46:59.192426 #14826]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-04-25T18:46:59.365159 #14826]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:46:59.365306 #14826]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:46:59.365327 #14826]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:47:14.471095 #14826]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:47:14.868952 #14826]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:47:14.869007 #14826]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:47:14.869025 #14826]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:47:15.446325 #14826]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:47:15.446380 #14826]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:47:15.736659 #14826]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:47:15.918586 #14826]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:47:16.196954 #14826]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:47:16.197202 #14826]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:47:16.228194 #14826]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:47:28.153046 #14826]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:47:29.143322 #14826]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:47:29.144359 #14826]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m37.47s).
+I, [2015-04-25T18:47:29.144440 #14826]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:47:29.144881 #14826]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:47:29.144931 #14826]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:47:29.145105 #14826]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:47:29.196493 #14826]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:47:29.197323 #14826]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:47:29.364590 #14826]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:47:29.364663 #14826]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:47:29.364681 #14826]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:47:29.364694 #14826]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:47:34.926056 #14826]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:47:34.926262 #14826]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:47:34.926412 #14826]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/metadata.txt
+I, [2015-04-25T18:47:34.926689 #14826]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:47:40.174522 #14826]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:47:40.174939 #14826]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:47:40.175235 #14826]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:47:40.177075 #14826]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:47:40.181231 #14826]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:47:40.181499 #14826]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:47:40.181688 #14826]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:48:32.069861 #14826]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:48:32.248119 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:48:32.248397 #14826]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:48:32.248509 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:48:32.248625 #14826]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:48:32.248736 #14826]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:48:32.248853 #14826]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:48:32.248983 #14826]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:48:32.249124 #14826]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:48:32.249211 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:48:32.249356 #14826]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:48:32.249445 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:48:32.249580 #14826]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:48:32.249706 #14826]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:48:32.279606 #14826]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:48:32.346986 #14826]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:48:32.348012 #14826]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:48:32.350072 #14826]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:48:36.907881 #14826]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:48:36.976575 #14826]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:48:37.036602 #14826]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:48:38.855227 #14826]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:48:44.654292 #14826]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:48:44.661066 #14826]  INFO -- default-ubuntu-1404: Converging 14 resources
+I, [2015-04-25T18:48:44.661598 #14826]  INFO -- default-ubuntu-1404: Recipe: apt::default
+I, [2015-04-25T18:48:44.662270 #14826]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:48:44.663710 #14826]  INFO -- default-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2015-04-25T18:48:44.669171 #14826]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2015-04-25T18:48:44.670121 #14826]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2015-04-25T18:48:44.670604 #14826]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2015-04-25T18:48:44.671068 #14826]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/15update-stamp	2015-04-25 23:48:44.658382948 +0000
+I, [2015-04-25T18:48:44.671546 #14826]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.15update-stamp20150425-1444-81n0uz	2015-04-25 23:48:44.658382948 +0000
+I, [2015-04-25T18:48:44.671762 #14826]  INFO -- default-ubuntu-1404:     @@ -1 +1,2 @@
+I, [2015-04-25T18:48:44.672333 #14826]  INFO -- default-ubuntu-1404:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2015-04-25T18:49:03.079775 #14826]  INFO -- default-ubuntu-1404:   * execute[apt-get-update] action run
+I, [2015-04-25T18:49:03.080037 #14826]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2015-04-25T18:49:03.083972 #14826]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action touch
+I, [2015-04-25T18:49:03.084268 #14826]  INFO -- default-ubuntu-1404:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2015-04-25T18:49:03.084849 #14826]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:49:03.085305 #14826]  INFO -- default-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:49:03.085702 #14826]  INFO -- default-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:49:03.097766 #14826]  INFO -- default-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to only_if)
+I, [2015-04-25T18:49:03.097984 #14826]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local] action create
+I, [2015-04-25T18:49:03.098296 #14826]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local
+I, [2015-04-25T18:49:03.098438 #14826]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:49:03.098604 #14826]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:49:03.098769 #14826]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:49:03.098900 #14826]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create
+I, [2015-04-25T18:49:03.099089 #14826]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local/preseeding
+I, [2015-04-25T18:49:03.099228 #14826]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:49:03.099424 #14826]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:49:03.099557 #14826]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:49:03.099672 #14826]  INFO -- default-ubuntu-1404: Recipe: example2::default
+I, [2015-04-25T18:49:11.302461 #14826]  INFO -- default-ubuntu-1404:   * apt_package[ntp] action install
+I, [2015-04-25T18:49:11.302679 #14826]  INFO -- default-ubuntu-1404:     - install version 1:4.2.6.p5+dfsg-3ubuntu2.14.04.3 of package ntp
+I, [2015-04-25T18:49:11.305298 #14826]  INFO -- default-ubuntu-1404:   * file[/etc/ntp.conf] action delete
+I, [2015-04-25T18:49:11.305639 #14826]  INFO -- default-ubuntu-1404:     - delete file /etc/ntp.conf
+I, [2015-04-25T18:49:11.310889 #14826]  INFO -- default-ubuntu-1404:   * template[/etc/ntp.conf] action create
+I, [2015-04-25T18:49:11.311037 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.311290 #14826]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2015-04-25T18:49:11.311506 #14826]  INFO -- default-ubuntu-1404:     Error executing action `create` on resource 'template[/etc/ntp.conf]'
+I, [2015-04-25T18:49:11.311696 #14826]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2015-04-25T18:49:11.311857 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.312045 #14826]  INFO -- default-ubuntu-1404:     Chef::Mixin::Template::TemplateError
+I, [2015-04-25T18:49:11.312249 #14826]  INFO -- default-ubuntu-1404:     ------------------------------------
+I, [2015-04-25T18:49:11.312459 #14826]  INFO -- default-ubuntu-1404:     undefined method `each' for nil:NilClass
+I, [2015-04-25T18:49:11.312600 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.312804 #14826]  INFO -- default-ubuntu-1404:     Resource Declaration:
+I, [2015-04-25T18:49:11.313000 #14826]  INFO -- default-ubuntu-1404:     ---------------------
+I, [2015-04-25T18:49:11.313209 #14826]  INFO -- default-ubuntu-1404:     # In /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T18:49:11.313380 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.313594 #14826]  INFO -- default-ubuntu-1404:      11: template "/etc/ntp.conf" do
+I, [2015-04-25T18:49:11.313914 #14826]  INFO -- default-ubuntu-1404:      12: 	source "ntp.conf.erb"
+I, [2015-04-25T18:49:11.314121 #14826]  INFO -- default-ubuntu-1404:      13: end
+I, [2015-04-25T18:49:11.314358 #14826]  INFO -- default-ubuntu-1404:      14: 
+I, [2015-04-25T18:49:11.314535 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.314749 #14826]  INFO -- default-ubuntu-1404:     Compiled Resource:
+I, [2015-04-25T18:49:11.315093 #14826]  INFO -- default-ubuntu-1404:     ------------------
+I, [2015-04-25T18:49:11.315314 #14826]  INFO -- default-ubuntu-1404:     # Declared in /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T18:49:11.315474 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.315497 #14826]  INFO -- default-ubuntu-1404:     template("/etc/ntp.conf") do
+I, [2015-04-25T18:49:11.315510 #14826]  INFO -- default-ubuntu-1404:       action "create"
+I, [2015-04-25T18:49:11.315520 #14826]  INFO -- default-ubuntu-1404:       retries 0
+I, [2015-04-25T18:49:11.315530 #14826]  INFO -- default-ubuntu-1404:       retry_delay 2
+I, [2015-04-25T18:49:11.315540 #14826]  INFO -- default-ubuntu-1404:       default_guard_interpreter :default
+I, [2015-04-25T18:49:11.315550 #14826]  INFO -- default-ubuntu-1404:       path "/etc/ntp.conf"
+I, [2015-04-25T18:49:11.315559 #14826]  INFO -- default-ubuntu-1404:       backup 5
+I, [2015-04-25T18:49:11.315569 #14826]  INFO -- default-ubuntu-1404:       atomic_update true
+I, [2015-04-25T18:49:11.315578 #14826]  INFO -- default-ubuntu-1404:       source "ntp.conf.erb"
+I, [2015-04-25T18:49:11.315588 #14826]  INFO -- default-ubuntu-1404:       declared_type :template
+I, [2015-04-25T18:49:11.315606 #14826]  INFO -- default-ubuntu-1404:       cookbook_name :example2
+I, [2015-04-25T18:49:11.315617 #14826]  INFO -- default-ubuntu-1404:       recipe_name "default"
+I, [2015-04-25T18:49:11.315784 #14826]  INFO -- default-ubuntu-1404: end
+I, [2015-04-25T18:49:11.315804 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.315816 #14826]  INFO -- default-ubuntu-1404:     Template Context:
+I, [2015-04-25T18:49:11.315827 #14826]  INFO -- default-ubuntu-1404:     -----------------
+I, [2015-04-25T18:49:11.315923 #14826]  INFO -- default-ubuntu-1404: on line #1
+I, [2015-04-25T18:49:11.315960 #14826]  INFO -- default-ubuntu-1404:       1: <% for @hostname in @ntp_servers %>
+I, [2015-04-25T18:49:11.315982 #14826]  INFO -- default-ubuntu-1404:       2: 	<% puts "server ${hostname}" %>
+I, [2015-04-25T18:49:11.315993 #14826]  INFO -- default-ubuntu-1404:       3: <% end %>
+I, [2015-04-25T18:49:11.316003 #14826]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:49:11.316012 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.316208 #14826]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:49:11.316820 #14826]  INFO -- default-ubuntu-1404: [2015-04-25T23:49:11+00:00] ERROR: Running exception handlers
+I, [2015-04-25T18:49:11.316847 #14826]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T18:49:11.316861 #14826]  INFO -- default-ubuntu-1404: [2015-04-25T23:49:11+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T18:49:11.317182 #14826]  INFO -- default-ubuntu-1404: [2015-04-25T23:49:11+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-04-25T18:49:11.318238 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.337140 #14826]  INFO -- default-ubuntu-1404: [2015-04-25T23:49:11+00:00] ERROR: 
+I, [2015-04-25T18:49:11.337343 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.337525 #14826]  INFO -- default-ubuntu-1404: Chef::Mixin::Template::TemplateError (undefined method `each' for nil:NilClass) on line #1:
+I, [2015-04-25T18:49:11.337640 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.337794 #14826]  INFO -- default-ubuntu-1404:   1: <% for @hostname in @ntp_servers %>
+I, [2015-04-25T18:49:11.338045 #14826]  INFO -- default-ubuntu-1404:   2: 	<% puts "server ${hostname}" %>
+I, [2015-04-25T18:49:11.338171 #14826]  INFO -- default-ubuntu-1404:   3: <% end %>
+I, [2015-04-25T18:49:11.338302 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.338431 #14826]  INFO -- default-ubuntu-1404:   (erubis):1:in `block in evaluate'
+I, [2015-04-25T18:49:11.338585 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/erubis-2.7.0/lib/erubis/evaluator.rb:74:in `instance_eval'
+I, [2015-04-25T18:49:11.338718 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/erubis-2.7.0/lib/erubis/evaluator.rb:74:in `evaluate'
+I, [2015-04-25T18:49:11.338867 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/mixin/template.rb:114:in `_render_template'
+I, [2015-04-25T18:49:11.338997 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/mixin/template.rb:100:in `render_template'
+I, [2015-04-25T18:49:11.339148 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/template/content.rb:43:in `file_for_provider'
+I, [2015-04-25T18:49:11.339292 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/file_content_management/content_base.rb:40:in `tempfile'
+I, [2015-04-25T18:49:11.339441 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:459:in `tempfile'
+I, [2015-04-25T18:49:11.339578 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:337:in `do_generate_content'
+I, [2015-04-25T18:49:11.339730 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:148:in `action_create'
+I, [2015-04-25T18:49:11.339887 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider.rb:145:in `run_action'
+I, [2015-04-25T18:49:11.340029 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource.rb:561:in `run_action'
+I, [2015-04-25T18:49:11.340169 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:49:in `run_action'
+I, [2015-04-25T18:49:11.340317 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block (2 levels) in converge'
+I, [2015-04-25T18:49:11.340423 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `each'
+I, [2015-04-25T18:49:11.340443 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block in converge'
+I, [2015-04-25T18:49:11.340466 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:83:in `block in execute_each_resource'
+I, [2015-04-25T18:49:11.340479 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+I, [2015-04-25T18:49:11.340490 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+I, [2015-04-25T18:49:11.340500 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+I, [2015-04-25T18:49:11.340510 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+I, [2015-04-25T18:49:11.340521 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+I, [2015-04-25T18:49:11.340531 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:81:in `execute_each_resource'
+I, [2015-04-25T18:49:11.340541 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/2.1.0/forwardable.rb:183:in `execute_each_resource'
+I, [2015-04-25T18:49:11.340551 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:80:in `converge'
+I, [2015-04-25T18:49:11.340560 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:331:in `block in converge'
+I, [2015-04-25T18:49:11.340570 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:326:in `catch'
+I, [2015-04-25T18:49:11.340580 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:326:in `converge'
+I, [2015-04-25T18:49:11.340589 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:345:in `converge_and_save'
+I, [2015-04-25T18:49:11.340599 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:449:in `run'
+I, [2015-04-25T18:49:11.340608 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:271:in `block in fork_chef_client'
+I, [2015-04-25T18:49:11.341734 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.341770 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:259:in `fork_chef_client'
+I, [2015-04-25T18:49:11.341785 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:225:in `block in run_chef_client'
+I, [2015-04-25T18:49:11.341797 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/local_mode.rb:38:in `with_server_connectivity'
+I, [2015-04-25T18:49:11.341808 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+I, [2015-04-25T18:49:11.341818 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:275:in `block in interval_run_chef_client'
+I, [2015-04-25T18:49:11.341828 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:264:in `loop'
+I, [2015-04-25T18:49:11.341844 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:264:in `interval_run_chef_client'
+I, [2015-04-25T18:49:11.341855 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:242:in `run_application'
+I, [2015-04-25T18:49:11.341865 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+I, [2015-04-25T18:49:11.341875 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/bin/chef-solo:25:in `<top (required)>'
+I, [2015-04-25T18:49:11.341885 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/bin/chef-solo:51:in `load'
+I, [2015-04-25T18:49:11.341894 #14826]  INFO -- default-ubuntu-1404:   /opt/chef/bin/chef-solo:51:in `<main>'
+I, [2015-04-25T18:49:11.341904 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.341913 #14826]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:49:11.366330 #14826]  INFO -- default-ubuntu-1404: [2015-04-25T23:49:11+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T18:49:11.388596 #14826] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T18:49:11.388703 #14826] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T18:49:11.388719 #14826] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T18:49:11.388729 #14826] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:49:11.388739 #14826] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T18:49:11.388747 #14826] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T18:49:11.388754 #14826] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:49:11.388763 #14826] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T18:49:11.388771 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T18:49:11.388779 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T18:49:11.388787 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T18:49:11.388795 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T18:49:11.388803 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T18:49:11.388811 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T18:49:11.388819 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T18:49:11.388827 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T18:49:11.388835 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T18:49:11.388844 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T18:49:11.388851 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T18:49:11.388865 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T18:49:11.388874 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T18:49:11.388883 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T18:49:11.388891 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T18:49:11.388899 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T18:49:11.388907 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T18:49:11.388914 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T18:49:11.388935 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T18:49:11.388943 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T18:49:11.388951 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T18:49:11.388959 #14826] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T18:49:11.388967 #14826] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:49:46.116725 #16104]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:49:47.464139 #16104]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:49:48.556872 #16104]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:49:48.870032 #16104]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:49:48.870938 #16104]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.75s).
+I, [2015-04-25T18:50:46.286479 #16455]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:50:47.043821 #16455]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:50:47.165117 #16455]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:50:53.216869 #16455]  INFO -- default-ubuntu-1404: [KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:50:53.632807 #16455]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430005853602_98415
+I, [2015-04-25T18:50:53.846042 #16455]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:50:53.880438 #16455]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:50:53.917998 #16455]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:50:53.918181 #16455]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:50:53.956167 #16455]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:50:54.015998 #16455]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:50:54.128908 #16455]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:50:54.442159 #16455]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:50:54.442279 #16455]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:50:54.442301 #16455]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:51:09.538558 #16455]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:51:09.943163 #16455]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:51:09.943224 #16455]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:51:09.943243 #16455]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:51:10.389271 #16455]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:51:10.389382 #16455]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:51:10.679989 #16455]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:51:10.900401 #16455]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:51:11.277809 #16455]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:51:11.278079 #16455]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:51:11.310286 #16455]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:51:19.393952 #16455]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:51:20.394226 #16455]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:51:20.395256 #16455]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m34.11s).
+I, [2015-04-25T18:51:20.395338 #16455]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:51:20.395786 #16455]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:51:20.395838 #16455]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:51:20.396017 #16455]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:51:20.446740 #16455]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:51:20.447571 #16455]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:51:20.615588 #16455]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:51:20.615652 #16455]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:51:20.615670 #16455]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:51:20.615683 #16455]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:51:25.854994 #16455]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:51:25.855167 #16455]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:51:25.855342 #16455]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/metadata.txt
+I, [2015-04-25T18:51:25.855518 #16455]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:51:31.097290 #16455]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:51:31.097539 #16455]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:51:31.097738 #16455]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:51:31.099755 #16455]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:51:31.103850 #16455]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:51:31.104087 #16455]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:51:31.104280 #16455]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:52:32.887515 #16455]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:52:33.067478 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:52:33.067720 #16455]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:52:33.067808 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:52:33.067929 #16455]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:52:33.068047 #16455]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:52:33.068169 #16455]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:52:33.068295 #16455]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:52:33.068423 #16455]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:52:33.068512 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:52:33.068656 #16455]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:52:33.068747 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:52:33.068883 #16455]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:52:33.069007 #16455]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:52:33.098140 #16455]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:52:33.165930 #16455]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:52:33.166992 #16455]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:52:33.169672 #16455]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:52:37.639426 #16455]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:52:37.704826 #16455]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:52:37.764615 #16455]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:52:39.578242 #16455]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:52:45.377245 #16455]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:52:45.383469 #16455]  INFO -- default-ubuntu-1404: Converging 14 resources
+I, [2015-04-25T18:52:45.384010 #16455]  INFO -- default-ubuntu-1404: Recipe: apt::default
+I, [2015-04-25T18:52:45.384474 #16455]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:52:45.385829 #16455]  INFO -- default-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2015-04-25T18:52:45.391914 #16455]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2015-04-25T18:52:45.392831 #16455]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2015-04-25T18:52:45.393185 #16455]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2015-04-25T18:52:45.393654 #16455]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/15update-stamp	2015-04-25 23:52:45.384459628 +0000
+I, [2015-04-25T18:52:45.394013 #16455]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.15update-stamp20150425-1443-1liua3o	2015-04-25 23:52:45.384459628 +0000
+I, [2015-04-25T18:52:45.394347 #16455]  INFO -- default-ubuntu-1404:     @@ -1 +1,2 @@
+I, [2015-04-25T18:52:45.394857 #16455]  INFO -- default-ubuntu-1404:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2015-04-25T18:53:04.520630 #16455]  INFO -- default-ubuntu-1404:   * execute[apt-get-update] action run
+I, [2015-04-25T18:53:04.520889 #16455]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2015-04-25T18:53:04.523154 #16455]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action touch
+I, [2015-04-25T18:53:04.523560 #16455]  INFO -- default-ubuntu-1404:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2015-04-25T18:53:04.524064 #16455]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:53:04.524555 #16455]  INFO -- default-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:53:04.524976 #16455]  INFO -- default-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:53:04.536371 #16455]  INFO -- default-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to only_if)
+I, [2015-04-25T18:53:04.536706 #16455]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local] action create
+I, [2015-04-25T18:53:04.536853 #16455]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local
+I, [2015-04-25T18:53:04.537019 #16455]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:53:04.537167 #16455]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:53:04.537336 #16455]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:53:04.537474 #16455]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create
+I, [2015-04-25T18:53:04.537615 #16455]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local/preseeding
+I, [2015-04-25T18:53:04.537751 #16455]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:53:04.537910 #16455]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:53:04.538054 #16455]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:53:04.538221 #16455]  INFO -- default-ubuntu-1404: Recipe: example2::default
+I, [2015-04-25T18:53:14.526644 #16455]  INFO -- default-ubuntu-1404:   * apt_package[ntp] action install
+I, [2015-04-25T18:53:14.527044 #16455]  INFO -- default-ubuntu-1404:     - install version 1:4.2.6.p5+dfsg-3ubuntu2.14.04.3 of package ntp
+I, [2015-04-25T18:53:14.529693 #16455]  INFO -- default-ubuntu-1404:   * file[/etc/ntp.conf] action delete
+I, [2015-04-25T18:53:14.530184 #16455]  INFO -- default-ubuntu-1404:     - delete file /etc/ntp.conf
+I, [2015-04-25T18:53:14.535187 #16455]  INFO -- default-ubuntu-1404:   * template[/etc/ntp.conf] action create
+I, [2015-04-25T18:53:14.535429 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.535825 #16455]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2015-04-25T18:53:14.536181 #16455]  INFO -- default-ubuntu-1404:     Error executing action `create` on resource 'template[/etc/ntp.conf]'
+I, [2015-04-25T18:53:14.536700 #16455]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2015-04-25T18:53:14.536975 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.537322 #16455]  INFO -- default-ubuntu-1404:     Chef::Mixin::Template::TemplateError
+I, [2015-04-25T18:53:14.537678 #16455]  INFO -- default-ubuntu-1404:     ------------------------------------
+I, [2015-04-25T18:53:14.537995 #16455]  INFO -- default-ubuntu-1404:     undefined method `each' for nil:NilClass
+I, [2015-04-25T18:53:14.538281 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.538655 #16455]  INFO -- default-ubuntu-1404:     Resource Declaration:
+I, [2015-04-25T18:53:14.539052 #16455]  INFO -- default-ubuntu-1404:     ---------------------
+I, [2015-04-25T18:53:14.539456 #16455]  INFO -- default-ubuntu-1404:     # In /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T18:53:14.539676 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.539711 #16455]  INFO -- default-ubuntu-1404:      11: template "/etc/ntp.conf" do
+I, [2015-04-25T18:53:14.539738 #16455]  INFO -- default-ubuntu-1404:      12: 	source "ntp.conf.erb"
+I, [2015-04-25T18:53:14.539773 #16455]  INFO -- default-ubuntu-1404:      13: end
+I, [2015-04-25T18:53:14.539808 #16455]  INFO -- default-ubuntu-1404:      14: 
+I, [2015-04-25T18:53:14.540049 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.540080 #16455]  INFO -- default-ubuntu-1404:     Compiled Resource:
+I, [2015-04-25T18:53:14.540105 #16455]  INFO -- default-ubuntu-1404:     ------------------
+I, [2015-04-25T18:53:14.540144 #16455]  INFO -- default-ubuntu-1404:     # Declared in /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T18:53:14.540169 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.540194 #16455]  INFO -- default-ubuntu-1404:     template("/etc/ntp.conf") do
+I, [2015-04-25T18:53:14.540428 #16455]  INFO -- default-ubuntu-1404:   action "create"
+I, [2015-04-25T18:53:14.540462 #16455]  INFO -- default-ubuntu-1404:       retries 0
+I, [2015-04-25T18:53:14.540487 #16455]  INFO -- default-ubuntu-1404:       retry_delay 2
+I, [2015-04-25T18:53:14.540509 #16455]  INFO -- default-ubuntu-1404:       default_guard_interpreter :default
+I, [2015-04-25T18:53:14.540530 #16455]  INFO -- default-ubuntu-1404:       path "/etc/ntp.conf"
+I, [2015-04-25T18:53:14.540551 #16455]  INFO -- default-ubuntu-1404:       backup 5
+I, [2015-04-25T18:53:14.540571 #16455]  INFO -- default-ubuntu-1404:       atomic_update true
+I, [2015-04-25T18:53:14.540611 #16455]  INFO -- default-ubuntu-1404:       source "ntp.conf.erb"
+I, [2015-04-25T18:53:14.540634 #16455]  INFO -- default-ubuntu-1404:       declared_type :template
+I, [2015-04-25T18:53:14.540654 #16455]  INFO -- default-ubuntu-1404:       cookbook_name :example2
+I, [2015-04-25T18:53:14.540675 #16455]  INFO -- default-ubuntu-1404:       recipe_name "default"
+I, [2015-04-25T18:53:14.540693 #16455]  INFO -- default-ubuntu-1404:     end
+I, [2015-04-25T18:53:14.540711 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.540732 #16455]  INFO -- default-ubuntu-1404:     Template Context:
+I, [2015-04-25T18:53:14.541110 #16455]  INFO -- default-ubuntu-1404:     -----------------
+I, [2015-04-25T18:53:14.541143 #16455]  INFO -- default-ubuntu-1404:     on line #1
+I, [2015-04-25T18:53:14.541168 #16455]  INFO -- default-ubuntu-1404:       1: <% @ntp_servers.each do |hostname| %>
+I, [2015-04-25T18:53:14.541193 #16455]  INFO -- default-ubuntu-1404:       2: server <%= hostname %>
+I, [2015-04-25T18:53:14.541222 #16455]  INFO -- default-ubuntu-1404:       3: <% end %>
+I, [2015-04-25T18:53:14.541246 #16455]  INFO -- default-ubuntu-1404:     
+I, [2015-04-25T18:53:14.541268 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.541613 #16455]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:53:14.541804 #16455]  INFO -- default-ubuntu-1404: [2015-04-25T23:53:14+00:00] ERROR: Running exception handlers
+I, [2015-04-25T18:53:14.541954 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.542004 #16455]  INFO -- default-ubuntu-1404: [2015-04-25T23:53:14+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T18:53:14.542367 #16455]  INFO -- default-ubuntu-1404: [2015-04-25T23:53:14+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-04-25T18:53:14.542665 #16455]  INFO -- default-ubuntu-1404: Chef Client failed. 7 resources updated in 34.965104035 seconds
+I, [2015-04-25T18:53:14.562554 #16455]  INFO -- default-ubuntu-1404: [2015-04-25T23:53:14+00:00] ERROR: 
+I, [2015-04-25T18:53:14.562849 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.563115 #16455]  INFO -- default-ubuntu-1404: Chef::Mixin::Template::TemplateError (undefined method `each' for nil:NilClass) on line #1:
+I, [2015-04-25T18:53:14.563289 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.563575 #16455]  INFO -- default-ubuntu-1404:   1: <% @ntp_servers.each do |hostname| %>
+I, [2015-04-25T18:53:14.563824 #16455]  INFO -- default-ubuntu-1404:   2: server <%= hostname %>
+I, [2015-04-25T18:53:14.564078 #16455]  INFO -- default-ubuntu-1404:   3: <% end %>
+I, [2015-04-25T18:53:14.564241 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.564554 #16455]  INFO -- default-ubuntu-1404:   (erubis):1:in `block in evaluate'
+I, [2015-04-25T18:53:14.564823 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/erubis-2.7.0/lib/erubis/evaluator.rb:74:in `instance_eval'
+I, [2015-04-25T18:53:14.565097 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/erubis-2.7.0/lib/erubis/evaluator.rb:74:in `evaluate'
+I, [2015-04-25T18:53:14.565402 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/mixin/template.rb:114:in `_render_template'
+I, [2015-04-25T18:53:14.565631 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/mixin/template.rb:100:in `render_template'
+I, [2015-04-25T18:53:14.565857 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/template/content.rb:43:in `file_for_provider'
+I, [2015-04-25T18:53:14.566031 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/file_content_management/content_base.rb:40:in `tempfile'
+I, [2015-04-25T18:53:14.566248 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:459:in `tempfile'
+I, [2015-04-25T18:53:14.566429 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:337:in `do_generate_content'
+I, [2015-04-25T18:53:14.566459 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider/file.rb:148:in `action_create'
+I, [2015-04-25T18:53:14.566497 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/provider.rb:145:in `run_action'
+I, [2015-04-25T18:53:14.566517 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource.rb:561:in `run_action'
+I, [2015-04-25T18:53:14.566536 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:49:in `run_action'
+I, [2015-04-25T18:53:14.566554 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block (2 levels) in converge'
+I, [2015-04-25T18:53:14.566572 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `each'
+I, [2015-04-25T18:53:14.566589 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block in converge'
+I, [2015-04-25T18:53:14.566607 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:83:in `block in execute_each_resource'
+I, [2015-04-25T18:53:14.566625 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+I, [2015-04-25T18:53:14.566643 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+I, [2015-04-25T18:53:14.566662 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+I, [2015-04-25T18:53:14.566689 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+I, [2015-04-25T18:53:14.566727 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+I, [2015-04-25T18:53:14.566747 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:81:in `execute_each_resource'
+I, [2015-04-25T18:53:14.566764 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/lib/ruby/2.1.0/forwardable.rb:183:in `execute_each_resource'
+I, [2015-04-25T18:53:14.566781 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/runner.rb:80:in `converge'
+I, [2015-04-25T18:53:14.566798 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:331:in `block in converge'
+I, [2015-04-25T18:53:14.566815 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:326:in `catch'
+I, [2015-04-25T18:53:14.566832 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:326:in `converge'
+I, [2015-04-25T18:53:14.566850 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/client.rb:345:in `converge_and_save'
+I, [2015-04-25T18:53:14.567340 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.567375 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:271:in `block in fork_chef_client'
+I, [2015-04-25T18:53:14.567398 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:259:in `fork'
+I, [2015-04-25T18:53:14.567415 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:259:in `fork_chef_client'
+I, [2015-04-25T18:53:14.567432 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:225:in `block in run_chef_client'
+I, [2015-04-25T18:53:14.567468 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/local_mode.rb:38:in `with_server_connectivity'
+I, [2015-04-25T18:53:14.567484 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+I, [2015-04-25T18:53:14.567500 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:275:in `block in interval_run_chef_client'
+I, [2015-04-25T18:53:14.567516 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:264:in `loop'
+I, [2015-04-25T18:53:14.567532 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:264:in `interval_run_chef_client'
+I, [2015-04-25T18:53:14.567547 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application/solo.rb:242:in `run_application'
+I, [2015-04-25T18:53:14.567563 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+I, [2015-04-25T18:53:14.567578 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/embedded/apps/chef/bin/chef-solo:25:in `<top (required)>'
+I, [2015-04-25T18:53:14.567593 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/bin/chef-solo:51:in `load'
+I, [2015-04-25T18:53:14.567608 #16455]  INFO -- default-ubuntu-1404:   /opt/chef/bin/chef-solo:51:in `<main>'
+I, [2015-04-25T18:53:14.567623 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.567638 #16455]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:53:14.592201 #16455]  INFO -- default-ubuntu-1404: [2015-04-25T23:53:14+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T18:53:14.615729 #16455] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T18:53:14.615813 #16455] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T18:53:14.615835 #16455] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T18:53:14.615846 #16455] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:53:14.615855 #16455] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T18:53:14.615864 #16455] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T18:53:14.615872 #16455] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T18:53:14.615902 #16455] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T18:53:14.615920 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T18:53:14.615939 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T18:53:14.615978 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T18:53:14.615997 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T18:53:14.616010 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T18:53:14.616019 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T18:53:14.616028 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T18:53:14.616036 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T18:53:14.616044 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T18:53:14.616052 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T18:53:14.616060 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T18:53:14.616068 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T18:53:14.616076 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T18:53:14.616084 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T18:53:14.616093 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T18:53:14.616101 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T18:53:14.616122 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T18:53:14.616132 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T18:53:14.616140 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T18:53:14.616148 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T18:53:14.616159 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T18:53:14.616168 #16455] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T18:53:14.616176 #16455] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T18:54:58.651536 #17813]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:54:59.993082 #17813]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:55:01.116181 #17813]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:55:01.432069 #17813]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:55:01.432948 #17813]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.78s).
+I, [2015-04-25T18:56:02.642685 #18188]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T18:56:03.399364 #18188]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T18:56:03.517978 #18188]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T18:56:09.455470 #18188]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T18:56:09.879517 #18188]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430006169850_27957
+I, [2015-04-25T18:56:10.081961 #18188]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T18:56:10.115503 #18188]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T18:56:10.153086 #18188]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T18:56:10.153278 #18188]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T18:56:10.189817 #18188]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T18:56:10.250778 #18188]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T18:56:10.363260 #18188]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T18:56:10.506169 #18188]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-04-25T18:56:10.679681 #18188]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T18:56:10.679820 #18188]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T18:56:10.679895 #18188]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T18:56:25.788556 #18188]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T18:56:26.184330 #18188]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:56:26.184386 #18188]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T18:56:26.184404 #18188]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T18:56:26.612223 #18188]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T18:56:26.612277 #18188]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T18:56:26.902532 #18188]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T18:56:27.124342 #18188]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T18:56:27.512277 #18188]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T18:56:27.512496 #18188]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T18:56:27.543837 #18188]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T18:56:35.625191 #18188]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T18:56:36.617252 #18188]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T18:56:36.618268 #18188]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.97s).
+I, [2015-04-25T18:56:36.618346 #18188]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:56:36.618798 #18188]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T18:56:36.618848 #18188]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T18:56:36.619011 #18188]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T18:56:36.673081 #18188]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T18:56:36.674032 #18188]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T18:56:36.843490 #18188]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T18:56:36.843555 #18188]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T18:56:36.843572 #18188]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T18:56:36.843586 #18188]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:56:42.655738 #18188]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T18:56:42.655918 #18188]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T18:56:42.656055 #18188]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/metadata.txt
+I, [2015-04-25T18:56:42.656172 #18188]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:56:49.474969 #18188]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:56:49.475233 #18188]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T18:56:49.475428 #18188]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T18:56:49.477054 #18188]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T18:56:49.481013 #18188]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:56:49.481179 #18188]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1334/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T18:56:49.481335 #18188]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T18:57:25.799633 #18188]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T18:57:25.977601 #18188]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:57:25.977897 #18188]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:57:25.978017 #18188]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:57:25.978161 #18188]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T18:57:25.978338 #18188]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T18:57:25.978485 #18188]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T18:57:25.978619 #18188]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T18:57:25.978792 #18188]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T18:57:25.978905 #18188]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:57:25.979077 #18188]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T18:57:25.979176 #18188]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:57:25.979342 #18188]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T18:57:25.979474 #18188]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T18:57:26.009219 #18188]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T18:57:26.076236 #18188]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T18:57:26.077187 #18188]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T18:57:26.079587 #18188]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T18:57:30.582566 #18188]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T18:57:30.645924 #18188]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T18:57:30.704585 #18188]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T18:57:32.509610 #18188]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T18:57:38.314450 #18188]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T18:57:38.320640 #18188]  INFO -- default-ubuntu-1404: Converging 14 resources
+I, [2015-04-25T18:57:38.321155 #18188]  INFO -- default-ubuntu-1404: Recipe: apt::default
+I, [2015-04-25T18:57:38.321792 #18188]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:57:38.323335 #18188]  INFO -- default-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2015-04-25T18:57:38.328461 #18188]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2015-04-25T18:57:38.329297 #18188]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2015-04-25T18:57:38.329643 #18188]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2015-04-25T18:57:38.330091 #18188]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/15update-stamp	2015-04-25 23:57:38.315343250 +0000
+I, [2015-04-25T18:57:38.330543 #18188]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.15update-stamp20150425-1444-rzgaux	2015-04-25 23:57:38.315343250 +0000
+I, [2015-04-25T18:57:38.330805 #18188]  INFO -- default-ubuntu-1404:     @@ -1 +1,2 @@
+I, [2015-04-25T18:57:38.331394 #18188]  INFO -- default-ubuntu-1404:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2015-04-25T18:57:59.783340 #18188]  INFO -- default-ubuntu-1404:   * execute[apt-get-update] action run
+I, [2015-04-25T18:57:59.783665 #18188]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2015-04-25T18:57:59.786038 #18188]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action touch
+I, [2015-04-25T18:57:59.796987 #18188]  INFO -- default-ubuntu-1404:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2015-04-25T18:57:59.797322 #18188]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:57:59.797608 #18188]  INFO -- default-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:57:59.797794 #18188]  INFO -- default-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2015-04-25T18:57:59.797969 #18188]  INFO -- default-ubuntu-1404:   * execute[apt-get-update-periodic] action run (skipped due to only_if)
+I, [2015-04-25T18:57:59.798129 #18188]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local] action create
+I, [2015-04-25T18:57:59.798272 #18188]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local
+I, [2015-04-25T18:57:59.798430 #18188]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:57:59.798596 #18188]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:57:59.798745 #18188]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:57:59.798949 #18188]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create
+I, [2015-04-25T18:57:59.799082 #18188]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local/preseeding
+I, [2015-04-25T18:57:59.799224 #18188]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2015-04-25T18:57:59.799355 #18188]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2015-04-25T18:57:59.799490 #18188]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2015-04-25T18:57:59.799591 #18188]  INFO -- default-ubuntu-1404: Recipe: example2::default
+I, [2015-04-25T18:58:08.503948 #18188]  INFO -- default-ubuntu-1404:   * apt_package[ntp] action install
+I, [2015-04-25T18:58:08.504160 #18188]  INFO -- default-ubuntu-1404:     - install version 1:4.2.6.p5+dfsg-3ubuntu2.14.04.3 of package ntp
+I, [2015-04-25T18:58:08.506959 #18188]  INFO -- default-ubuntu-1404:   * file[/etc/ntp.conf] action delete
+I, [2015-04-25T18:58:08.507219 #18188]  INFO -- default-ubuntu-1404:     - delete file /etc/ntp.conf
+I, [2015-04-25T18:58:08.511710 #18188]  INFO -- default-ubuntu-1404:   * template[/etc/ntp.conf] action create
+I, [2015-04-25T18:58:08.513058 #18188]  INFO -- default-ubuntu-1404:     - create new file /etc/ntp.conf
+I, [2015-04-25T18:58:08.513488 #18188]  INFO -- default-ubuntu-1404:     - update content in file /etc/ntp.conf from none to 644321
+I, [2015-04-25T18:58:08.513986 #18188]  INFO -- default-ubuntu-1404:     --- /etc/ntp.conf	2015-04-25 23:58:08.495343875 +0000
+I, [2015-04-25T18:58:08.514364 #18188]  INFO -- default-ubuntu-1404:     +++ /tmp/chef-rendered-template20150425-1444-bwo7np	2015-04-25 23:58:08.495343875 +0000
+I, [2015-04-25T18:58:08.514595 #18188]  INFO -- default-ubuntu-1404:     @@ -1 +1,5 @@
+I, [2015-04-25T18:58:08.514822 #18188]  INFO -- default-ubuntu-1404:     +server 0.pool.ntp.org
+I, [2015-04-25T18:58:08.515062 #18188]  INFO -- default-ubuntu-1404:     +server 1.pool.ntp.org
+I, [2015-04-25T18:58:08.515291 #18188]  INFO -- default-ubuntu-1404:     +server 2.pool.ntp.org
+I, [2015-04-25T18:58:08.515534 #18188]  INFO -- default-ubuntu-1404:     +server 3.pool.ntp.org
+I, [2015-04-25T18:58:08.554967 #18188]  INFO -- default-ubuntu-1404:   * service[ntp] action start (up to date)
+I, [2015-04-25T18:58:08.577439 #18188]  INFO -- default-ubuntu-1404:   * service[ntp] action enable (up to date)
+I, [2015-04-25T18:58:08.577594 #18188]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T18:58:08.578248 #18188]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T18:58:08.578379 #18188]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T18:58:08.578479 #18188]  INFO -- default-ubuntu-1404: Chef Client finished, 8/11 resources updated in 36.06994908 seconds
+I, [2015-04-25T18:58:08.645553 #18188]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m32.03s).
+I, [2015-04-25T18:58:53.987768 #19491]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:58:55.344427 #19491]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T18:58:56.473544 #19491]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T18:58:56.791886 #19491]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T18:58:56.792790 #19491]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.80s).
+I, [2015-04-25T19:00:49.922467 #19938]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T19:00:50.704430 #19938]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T19:00:50.825880 #19938]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T19:00:56.794202 #19938]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T19:00:57.197929 #19938]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430006457168_72077
+I, [2015-04-25T19:00:57.411111 #19938]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T19:00:57.444113 #19938]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T19:00:57.486574 #19938]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T19:00:57.486791 #19938]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T19:00:57.524697 #19938]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T19:00:57.583845 #19938]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T19:00:57.698463 #19938]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T19:00:58.014674 #19938]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T19:00:58.014890 #19938]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T19:00:58.035038 #19938]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T19:01:13.121175 #19938]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T19:01:13.517987 #19938]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T19:01:13.518044 #19938]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T19:01:13.518064 #19938]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T19:01:14.144294 #19938]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T19:01:14.144445 #19938]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T19:01:14.431570 #19938]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T19:01:14.679266 #19938]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T19:01:15.841193 #19938]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T19:01:15.841403 #19938]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T19:01:15.872351 #19938]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T19:01:27.051768 #19938]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T19:01:28.113941 #19938]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T19:01:28.115033 #19938]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m38.19s).
+I, [2015-04-25T19:01:28.115135 #19938]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T19:01:28.115654 #19938]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T19:01:28.115708 #19938]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T19:01:28.115884 #19938]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T19:01:28.169237 #19938]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T19:01:28.170189 #19938]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T19:01:28.343533 #19938]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T19:01:28.343595 #19938]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T19:01:28.343616 #19938]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T19:01:28.343631 #19938]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:01:33.560538 #19938]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T19:01:33.560708 #19938]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T19:01:33.560838 #19938]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1346/metadata.txt
+I, [2015-04-25T19:01:33.560945 #19938]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:01:38.753326 #19938]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:01:38.753555 #19938]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T19:01:38.753726 #19938]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T19:01:38.755499 #19938]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T19:01:38.759197 #19938]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:01:38.759347 #19938]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1346/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:01:38.759487 #19938]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:02:10.535964 #19938]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T19:02:10.713990 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:10.714306 #19938]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T19:02:10.714425 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:10.714556 #19938]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T19:02:10.714681 #19938]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T19:02:10.714798 #19938]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T19:02:10.714918 #19938]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T19:02:10.715045 #19938]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T19:02:10.715175 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:10.715332 #19938]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T19:02:10.715428 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:10.715571 #19938]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T19:02:10.715708 #19938]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T19:02:10.745120 #19938]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T19:02:10.811281 #19938]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T19:02:10.812295 #19938]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T19:02:10.814547 #19938]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T19:02:15.378036 #19938]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T19:02:15.444608 #19938]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T19:02:15.504743 #19938]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T19:02:17.304172 #19938]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T19:02:23.072718 #19938]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T19:02:23.078826 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.079014 #19938]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T19:02:23.079230 #19938]  INFO -- default-ubuntu-1404: Recipe Compile Error in /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T19:02:23.079436 #19938]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T19:02:23.079535 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.079778 #19938]  INFO -- default-ubuntu-1404: NoMethodError
+I, [2015-04-25T19:02:23.079979 #19938]  INFO -- default-ubuntu-1404: -------------
+I, [2015-04-25T19:02:23.080176 #19938]  INFO -- default-ubuntu-1404: undefined method `ntp_servers' for Chef::Resource::Template
+I, [2015-04-25T19:02:23.080295 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.080508 #19938]  INFO -- default-ubuntu-1404: Cookbook Trace:
+I, [2015-04-25T19:02:23.080694 #19938]  INFO -- default-ubuntu-1404: ---------------
+I, [2015-04-25T19:02:23.080891 #19938]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:13:in `block in from_file'
+I, [2015-04-25T19:02:23.081066 #19938]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T19:02:23.081188 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.081389 #19938]  INFO -- default-ubuntu-1404: Relevant File Content:
+I, [2015-04-25T19:02:23.081615 #19938]  INFO -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T19:02:23.081776 #19938]  INFO -- default-ubuntu-1404: /tmp/kitchen/cookbooks/example2/recipes/default.rb:
+I, [2015-04-25T19:02:23.081865 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.081997 #19938]  INFO -- default-ubuntu-1404:   6:  
+I, [2015-04-25T19:02:23.082130 #19938]  INFO -- default-ubuntu-1404:   7:  file "/etc/ntp.conf" do
+I, [2015-04-25T19:02:23.082409 #19938]  INFO -- default-ubuntu-1404:   8:  	action :delete
+I, [2015-04-25T19:02:23.082540 #19938]  INFO -- default-ubuntu-1404:   9:  end
+I, [2015-04-25T19:02:23.082669 #19938]  INFO -- default-ubuntu-1404:  10:  
+I, [2015-04-25T19:02:23.082814 #19938]  INFO -- default-ubuntu-1404:  11:  template "/etc/ntp.conf" do
+I, [2015-04-25T19:02:23.083151 #19938]  INFO -- default-ubuntu-1404:  12:  	source "ntp.conf.erb"
+I, [2015-04-25T19:02:23.083419 #19938]  INFO -- default-ubuntu-1404:  13>> 	variables ntp_servers
+I, [2015-04-25T19:02:23.083560 #19938]  INFO -- default-ubuntu-1404:  14:  end
+I, [2015-04-25T19:02:23.083717 #19938]  INFO -- default-ubuntu-1404:  15:  
+I, [2015-04-25T19:02:23.083947 #19938]  INFO -- default-ubuntu-1404:  16:  service "ntp" do
+I, [2015-04-25T19:02:23.083973 #19938]  INFO -- default-ubuntu-1404:  17:  	action [:start, :enable]
+I, [2015-04-25T19:02:23.083987 #19938]  INFO -- default-ubuntu-1404:  18:  end
+I, [2015-04-25T19:02:23.084003 #19938]  INFO -- default-ubuntu-1404:  19:  
+I, [2015-04-25T19:02:23.084015 #19938]  INFO -- default-ubuntu-1404:  20:  
+I, [2015-04-25T19:02:23.094464 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.094514 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.094610 #19938]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T19:02:23.094693 #19938]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:02:23.094711 #19938]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T19:02:23.094723 #19938]  INFO -- default-ubuntu-1404: [2015-04-26T00:02:23+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T19:02:23.094957 #19938]  INFO -- default-ubuntu-1404: [2015-04-26T00:02:23+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-04-25T19:02:23.095052 #19938]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 5.783919312 seconds
+I, [2015-04-25T19:02:23.103185 #19938]  INFO -- default-ubuntu-1404: [2015-04-26T00:02:23+00:00] ERROR: undefined method `ntp_servers' for Chef::Resource::Template
+I, [2015-04-25T19:02:23.124142 #19938]  INFO -- default-ubuntu-1404: [2015-04-26T00:02:23+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T19:02:23.146986 #19938] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T19:02:23.147074 #19938] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T19:02:23.147091 #19938] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T19:02:23.147101 #19938] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T19:02:23.147111 #19938] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T19:02:23.147120 #19938] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T19:02:23.147128 #19938] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T19:02:23.147137 #19938] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T19:02:23.147154 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T19:02:23.147163 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T19:02:23.147172 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T19:02:23.147180 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T19:02:23.147189 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T19:02:23.147198 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T19:02:23.147206 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T19:02:23.147220 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T19:02:23.147230 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T19:02:23.147245 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T19:02:23.147255 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T19:02:23.147264 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T19:02:23.147272 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T19:02:23.147281 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T19:02:23.147290 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T19:02:23.147298 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T19:02:23.147307 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T19:02:23.147315 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T19:02:23.147324 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T19:02:23.147333 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T19:02:23.147341 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T19:02:23.147349 #19938] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T19:02:23.147358 #19938] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T19:02:38.591584 #21342]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T19:02:39.930496 #21342]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T19:02:41.504629 #21342]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T19:02:41.806502 #21342]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T19:02:41.807452 #21342]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m3.21s).
+I, [2015-04-25T19:03:37.903129 #21694]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T19:03:38.661308 #21694]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-04-25T19:03:38.780184 #21694]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2015-04-25T19:03:44.712960 #21694]  INFO -- default-ubuntu-1404: [KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-04-25T19:03:45.134052 #21694]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1430006625105_4997
+I, [2015-04-25T19:03:45.345861 #21694]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-04-25T19:03:45.379492 #21694]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2015-04-25T19:03:45.417027 #21694]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2015-04-25T19:03:45.417289 #21694]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2015-04-25T19:03:45.455420 #21694]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2015-04-25T19:03:45.514206 #21694]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2015-04-25T19:03:45.622805 #21694]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2015-04-25T19:03:45.950447 #21694]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-04-25T19:03:45.950647 #21694]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2015-04-25T19:03:45.950757 #21694]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2015-04-25T19:04:01.057882 #21694]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2015-04-25T19:04:01.450804 #21694]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T19:04:01.450878 #21694]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-04-25T19:04:01.450906 #21694]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2015-04-25T19:04:01.874382 #21694]  INFO -- default-ubuntu-1404:     default: 
+I, [2015-04-25T19:04:01.874438 #21694]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2015-04-25T19:04:02.164555 #21694]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if its present...
+I, [2015-04-25T19:04:02.386306 #21694]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-04-25T19:04:02.780479 #21694]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2015-04-25T19:04:02.780883 #21694]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2015-04-25T19:04:02.811482 #21694]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2015-04-25T19:04:10.899082 #21694]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-04-25T19:04:11.897050 #21694]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2015-04-25T19:04:11.898084 #21694]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.99s).
+I, [2015-04-25T19:04:11.898162 #21694]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T19:04:11.898629 #21694]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2015-04-25T19:04:11.898680 #21694]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2015-04-25T19:04:11.898859 #21694]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-25T19:04:11.949922 #21694]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2015-04-25T19:04:11.950760 #21694]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2015-04-25T19:04:12.120540 #21694]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-04-25T19:04:12.120609 #21694]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/install.sh
+I, [2015-04-25T19:04:12.120643 #21694]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2015-04-25T19:04:12.120657 #21694]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:04:17.387482 #21694]  INFO -- default-ubuntu-1404: Downloading Chef  for ubuntu...
+I, [2015-04-25T19:04:17.387702 #21694]  INFO -- default-ubuntu-1404: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+I, [2015-04-25T19:04:17.387909 #21694]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/metadata.txt
+I, [2015-04-25T19:04:17.388135 #21694]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:04:22.739123 #21694]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:04:22.739472 #21694]  INFO -- default-ubuntu-1404: md5	84119f54115d754373c9891b8759497c
+I, [2015-04-25T19:04:22.739676 #21694]  INFO -- default-ubuntu-1404: sha256	8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e
+I, [2015-04-25T19:04:22.741355 #21694]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2015-04-25T19:04:22.745725 #21694]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:04:22.745889 #21694]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1333/chef_12.2.1-1_amd64.deb
+I, [2015-04-25T19:04:22.746053 #21694]  INFO -- default-ubuntu-1404: trying wget...
+I, [2015-04-25T19:05:36.286332 #21694]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2015-04-25T19:05:36.465979 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:36.466209 #21694]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T19:05:36.466309 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:36.466426 #21694]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-04-25T19:05:36.466551 #21694]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-04-25T19:05:36.466664 #21694]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major release.
+I, [2015-04-25T19:05:36.466789 #21694]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-04-25T19:05:36.466930 #21694]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2015-04-25T19:05:36.467027 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:36.467166 #21694]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-04-25T19:05:36.467247 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:36.467384 #21694]  INFO -- default-ubuntu-1404: Installing Chef 
+I, [2015-04-25T19:05:36.467520 #21694]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2015-04-25T19:05:36.496666 #21694]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2015-04-25T19:05:36.562682 #21694]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32400 files and directories currently installed.)
+I, [2015-04-25T19:05:36.563759 #21694]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.2.1-1_amd64.deb ...
+I, [2015-04-25T19:05:36.565872 #21694]  INFO -- default-ubuntu-1404: Unpacking chef (12.2.1-1) ...
+I, [2015-04-25T19:05:41.103997 #21694]  INFO -- default-ubuntu-1404: Setting up chef (12.2.1-1) ...
+I, [2015-04-25T19:05:41.169504 #21694]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2015-04-25T19:05:41.228641 #21694]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2015-04-25T19:05:43.056395 #21694]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.2.1
+I, [2015-04-25T19:05:48.833197 #21694]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2015-04-25T19:05:48.840667 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.840873 #21694]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T19:05:48.841031 #21694]  INFO -- default-ubuntu-1404: Recipe Compile Error in /tmp/kitchen/cookbooks/example2/recipes/default.rb
+I, [2015-04-25T19:05:48.841204 #21694]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2015-04-25T19:05:48.841313 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.841456 #21694]  INFO -- default-ubuntu-1404: Chef::Exceptions::ValidationFailed
+I, [2015-04-25T19:05:48.841579 #21694]  INFO -- default-ubuntu-1404: ----------------------------------
+I, [2015-04-25T19:05:48.841700 #21694]  INFO -- default-ubuntu-1404: Option variables must be a kind of [Hash]!  You passed :ntp_servers.
+I, [2015-04-25T19:05:48.841801 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.842009 #21694]  INFO -- default-ubuntu-1404: Cookbook Trace:
+I, [2015-04-25T19:05:48.842151 #21694]  INFO -- default-ubuntu-1404: ---------------
+I, [2015-04-25T19:05:48.842373 #21694]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:13:in `block in from_file'
+I, [2015-04-25T19:05:48.842556 #21694]  INFO -- default-ubuntu-1404:   /tmp/kitchen/cookbooks/example2/recipes/default.rb:11:in `from_file'
+I, [2015-04-25T19:05:48.842674 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.842835 #21694]  INFO -- default-ubuntu-1404: Relevant File Content:
+I, [2015-04-25T19:05:48.842979 #21694]  INFO -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T19:05:48.843166 #21694]  INFO -- default-ubuntu-1404: /tmp/kitchen/cookbooks/example2/recipes/default.rb:
+I, [2015-04-25T19:05:48.843262 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.843398 #21694]  INFO -- default-ubuntu-1404:   6:  
+I, [2015-04-25T19:05:48.843607 #21694]  INFO -- default-ubuntu-1404:   7:  file "/etc/ntp.conf" do
+I, [2015-04-25T19:05:48.843924 #21694]  INFO -- default-ubuntu-1404:   8:  	action :delete
+I, [2015-04-25T19:05:48.844111 #21694]  INFO -- default-ubuntu-1404:   9:  end
+I, [2015-04-25T19:05:48.844311 #21694]  INFO -- default-ubuntu-1404:  10:  
+I, [2015-04-25T19:05:48.844484 #21694]  INFO -- default-ubuntu-1404:  11:  template "/etc/ntp.conf" do
+I, [2015-04-25T19:05:48.854895 #21694]  INFO -- default-ubuntu-1404:  12:  	source "ntp.conf.erb"
+I, [2015-04-25T19:05:48.855142 #21694]  INFO -- default-ubuntu-1404:  13>> 	variables :ntp_servers
+I, [2015-04-25T19:05:48.855294 #21694]  INFO -- default-ubuntu-1404:  14:  end
+I, [2015-04-25T19:05:48.855491 #21694]  INFO -- default-ubuntu-1404:  15:  
+I, [2015-04-25T19:05:48.855512 #21694]  INFO -- default-ubuntu-1404:  16:  service "ntp" do
+I, [2015-04-25T19:05:48.855525 #21694]  INFO -- default-ubuntu-1404:  17:  	action [:start, :enable]
+I, [2015-04-25T19:05:48.855536 #21694]  INFO -- default-ubuntu-1404:  18:  end
+I, [2015-04-25T19:05:48.855546 #21694]  INFO -- default-ubuntu-1404:  19:  
+I, [2015-04-25T19:05:48.855556 #21694]  INFO -- default-ubuntu-1404:  20:  
+I, [2015-04-25T19:05:48.855566 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.855576 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.855715 #21694]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2015-04-25T19:05:48.855815 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.855908 #21694]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2015-04-25T19:05:48.855927 #21694]  INFO -- default-ubuntu-1404: [2015-04-26T00:05:48+00:00] ERROR: Exception handlers complete
+I, [2015-04-25T19:05:48.856020 #21694]  INFO -- default-ubuntu-1404: 
+I, [2015-04-25T19:05:48.856143 #21694]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 5.793327728 seconds
+I, [2015-04-25T19:05:48.864367 #21694]  INFO -- default-ubuntu-1404: [2015-04-26T00:05:48+00:00] ERROR: Option variables must be a kind of [Hash]!  You passed :ntp_servers.
+I, [2015-04-25T19:05:48.885944 #21694]  INFO -- default-ubuntu-1404: [2015-04-26T00:05:48+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-04-25T19:05:48.908526 #21694] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2015-04-25T19:05:48.908614 #21694] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2015-04-25T19:05:48.908644 #21694] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2015-04-25T19:05:48.908657 #21694] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T19:05:48.908667 #21694] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2015-04-25T19:05:48.908676 #21694] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2015-04-25T19:05:48.908684 #21694] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-04-25T19:05:48.908693 #21694] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2015-04-25T19:05:48.908701 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-04-25T19:05:48.908710 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-04-25T19:05:48.908718 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-04-25T19:05:48.908727 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-25T19:05:48.908735 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-25T19:05:48.908744 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-25T19:05:48.908752 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-25T19:05:48.908761 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-25T19:05:48.908769 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-25T19:05:48.908777 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-25T19:05:48.908786 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-25T19:05:48.908794 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-25T19:05:48.908803 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T19:05:48.908811 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-25T19:05:48.908819 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-25T19:05:48.908827 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-25T19:05:48.908835 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-25T19:05:48.908843 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-25T19:05:48.908852 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-25T19:05:48.908873 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-25T19:05:48.908885 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-25T19:05:48.908894 #21694] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-25T19:05:48.908902 #21694] ERROR -- default-ubuntu-1404: ----------------------
+I, [2015-04-25T19:20:10.597376 #23182]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T19:20:11.940557 #23182]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2015-04-25T19:20:13.019687 #23182]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2015-04-25T19:20:13.322641 #23182]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2015-04-25T19:20:13.323521 #23182]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m2.73s).

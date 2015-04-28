@@ -1,0 +1,9 @@
+DEPENDENCIES
+  example1
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.7.0)
+  example1 (0.1.0)
+    apt (>= 0.0.0)

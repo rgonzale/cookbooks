@@ -1,0 +1,45 @@
+I, [2015-04-25T17:38:40.692718 #6760]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-25T17:38:41.015304 #6760]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-25T17:39:15.012131 #6760]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-25T17:41:40.139459 #6760] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-25T17:47:09.586768 #8288]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-25T17:47:09.587028 #8288] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-25T17:47:09.587055 #8288] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-25T17:47:09.587069 #8288] ERROR -- Kitchen: Message: Kitchen YAML file /root/cookbooks/example1/.kitchen.yml does not exist.
+E, [2015-04-25T17:47:09.587080 #8288] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-25T17:47:09.587090 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2015-04-25T17:47:09.587099 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-25T17:47:09.587109 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-25T17:47:09.587126 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-25T17:47:09.587135 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-25T17:47:09.587146 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-25T17:47:09.587156 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-25T17:47:09.587166 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-25T17:47:09.587175 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-25T17:47:09.587185 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-25T17:47:09.587194 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-25T17:47:09.587203 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-25T17:47:09.587216 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-25T17:47:09.587228 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-25T17:47:09.587245 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-25T17:47:09.587256 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-25T17:47:09.587266 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-25T17:47:09.587275 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-25T17:47:09.587284 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-25T17:47:09.587293 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-25T17:47:09.587302 #8288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-25T17:47:09.587311 #8288] ERROR -- Kitchen: /bin/kitchen:15:in `load'
+E, [2015-04-25T17:47:09.587320 #8288] ERROR -- Kitchen: /bin/kitchen:15:in `<main>'
+E, [2015-04-25T17:47:09.587329 #8288] ERROR -- Kitchen: ----------------------
+I, [2015-04-25T17:47:22.264489 #8295]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-25T17:47:22.593116 #8295]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-25T17:47:31.962721 #8295] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-25T17:54:31.035065 #8424]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-25T17:54:31.359107 #8424]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-25T17:54:39.050448 #8424] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-25T18:01:40.903427 #8759]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-25T18:01:41.230958 #8759]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-25T18:02:09.563467 #8759]  INFO -- Kitchen: -----> Kitchen is finished. (0m28.66s)
+I, [2015-04-25T18:03:24.022060 #8917]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-25T18:03:24.349413 #8917]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-25T18:03:27.121786 #8917]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.10s)

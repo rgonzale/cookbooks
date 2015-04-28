@@ -1,0 +1,22 @@
+DEPENDENCIES
+  example4
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.7.0)
+  example4 (0.1.0)
+    apt (>= 0.0.0)
+    mysql (~> 6.0)
+    yum-epel (>= 0.0.0)
+  mysql (6.0.21)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  rbac (1.0.3)
+  smf (2.2.6)
+    rbac (>= 1.0.1)
+  yum (3.6.0)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.17)
+    yum (>= 3.0)
